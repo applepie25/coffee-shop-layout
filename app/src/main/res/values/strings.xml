@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">unj.cs.hw4</string>
+    <string name="title_home">Coffee List</string>
+    <string name="title_dashboard">Favorite</string>
+    <string name="coffetitle">Coffee Title</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. of type and scrambled it to make a type specimen book.</string>
+    <string name="coffee_tittle">Coffee Tittle</string>
+    <string name="description1">Description</string>
+    <string name="coffee_tittle1">Coffee Tittle</string>
+    <string name="description2">Description</string>
+    <string name="coffee_tittle3">Coffee Tittle</string>
+    <string name="description3">Description</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo3">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

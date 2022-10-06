@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.unjcshw4.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_favorite_list" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_list_coffee"
+            app:destination="@id/list_coffee" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.unjcshw4.ui.home.HomeFragment"
+        android:label="fragment_detail_coffee"
+        tools:layout="@layout/fragment_detail_coffee" >
+        <action
+            android:id="@+id/action_homeFragment_to_list_coffee"
+            app:destination="@id/list_coffee" />
+        <action
+            android:id="@+id/action_homeFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/list_coffee"
+        android:name="com.example.unjcshw4.list_coffee"
+        android:label="fragment_list_coffee"
+        tools:layout="@layout/fragment_list_coffee" >
+        <action
+            android:id="@+id/action_list_coffee_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_list_coffee_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+</navigation>
